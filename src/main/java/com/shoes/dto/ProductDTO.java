@@ -1,0 +1,110 @@
+package com.shoes.dto;
+
+public class ProductDTO {
+	
+	private Long id;
+	
+	private String name;
+	
+	private int categoryId;
+	
+	private double price;
+	
+	private double weight;
+	
+	private String description;
+	
+	private String imageName;
+
+	public Long getId() {
+		return id;
+	}
+	
+	 public ProductDTO() {
+	    }
+	
+
+	public ProductDTO(Long id, String name, int categoryId, double price, double weight, String description,
+			String imageName) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.categoryId = categoryId;
+		this.price = price;
+		this.weight = weight;
+		this.description = description;
+		this.imageName = imageName;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+	public int getCategoryId() {
+		return categoryId;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public double getWeight() {
+		return weight;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public String getImageName() {
+		return imageName;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setCategoryId(int categoryId) {
+		this.categoryId = categoryId;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	public void setWeight(double weight) {
+		this.weight = weight;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public void setImageName(String imageName) {
+		this.imageName = imageName;
+	}
+	
+	 @Override
+	    public String toString() {
+	        return "ProductDTO{" +
+	                "id=" + id +
+	                ", name='" + name + '\'' +
+	                ", categoryId=" + categoryId +
+	                ", price=" + price +
+	                ", weight=" + weight +
+	                ", description='" + description + '\'' +
+	                ", imageName='" + imageName + '\'' +
+	                '}';
+	    }
+
+
+	
+	
+	
+
+}
